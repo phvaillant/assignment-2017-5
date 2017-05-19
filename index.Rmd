@@ -26,7 +26,7 @@ Submitted solutions will use a **separate** repository.
 2. Edit the file `README.Rmd` with your solutions to the problems.
 3. Submit a pull request to have it graded. Include either or both a HTML and PDF file.
 
-For updates and questions follow the Slack channel: [#assignment5](https://uwcsss564.slack.com/messages/C5DBV8266).
+For updates and questions follow the Slack channel: `#assignment5`
 
 This assignment will require the following R packages:
 ```{r, message=FALSE}
