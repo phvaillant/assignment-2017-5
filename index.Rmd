@@ -1,0 +1,57 @@
+---
+title: 'STAT/CSSS 564: Assignment 5'
+author: Jeff Arnold & Sheridan Grant
+bibliography: assignment5.bib
+output:
+  html_document:
+    toc: false
+    number_sections: true
+  pdf_document:
+    toc: false
+    number_sections: true    
+---
+
+```{r include=FALSE}
+knitr::opts_chunk$set(cache = TRUE, autodep = TRUE)
+```
+
+**WORK IN PROGRESS**
+
+# Instructions {-}
+
+This repository contains the assignment instructions.
+Submitted solutions will use a **separate** repository.
+
+1. Fork [UW-CSSS-564/assignment-2017-5-submissions](https://github.com/UW-CSSS-564/assignment-2017-5-submissions) repository to your account.
+2. Edit the file `README.Rmd` with your solutions to the problems.
+3. Submit a pull request to have it graded. Include either or both a HTML and PDF file.
+
+For updates and questions follow the Slack channel: [#assignment5](https://uwcsss564.slack.com/messages/C5DBV8266).
+
+This assignment will require the following R packages:
+```{r, message=FALSE}
+library("rstan")
+library("rstanarm")
+library("haven")
+library("tidyverse")
+library("loo")
+```
+
+Set the following options for faster sampling sampling.[^rprofile]
+This option sets the default to save a compiled model to disk and reuse it if the code hasn't changed.
+This will avoid needless recompilation.
+```{r}
+rstan_options(auto_write = TRUE)
+```
+If you sample with multiple chains and your computer has multiple cores, this will run the chains in parallel.
+```{r}
+options(mc.cores = parallel::detectCores())
+```
+**WARNING** This will increase the amount of memory used, so if your computer does not have multiple cores, or is not powerful, you may not want to use this.
+Sampling will take longer, but use less memory.
+
+
+TODO
+
+
+# References {-}
